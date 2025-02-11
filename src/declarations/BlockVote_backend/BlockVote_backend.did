@@ -1,0 +1,6 @@
+service : {
+    registerCandidate: (text) -> (text) query;
+    registerVoter: (text) -> (text) query;
+    vote: (text, text) -> (text) query;
+    getResults: () -> (vec record { text; nat }) query;
+}

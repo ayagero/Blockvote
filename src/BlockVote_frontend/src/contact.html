@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet"
+    href="voting.css">
+</head>
+<body>
+  <div class="container">
+    <!--Include the Sidebar-->
+    <aside class="sidebar" id="sidebar">
+      <h2>Blockvote</h2>
+      <nav>
+        <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="admin.html">Admin Portal</a></li>
+              <li><a href="voting.html">Voting portal</a></li>
+              <li><a href="result.html">Result</a></li>
+              <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </aside> 
+  
+  <!--Main Content-->
+    <main class="main-content">
+      <section>
+        <h1>Contact Us</h1>
+        <p>Connect With Us through our Social media platforms:</p>
+        <ul>
+          <li>
+            <a href="https://twitter.com"
+            target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="https://facebook.com"
+            target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://instagram.com"
+            target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com"
+            target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+     <!-- Toggle Button -->
+     <button id="toggle-btn">☰</button>
+  </div>
+    <script>
+      // Sidebar Toggle Functionality
+      const toggleBtn = document.getElementById('toggle-btn');
+      const sidebar = document.getElementById('sidebar');
+      toggleBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('show-sidebar');
+      });
+  </script>
+  </body>
+</html>

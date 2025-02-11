@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive sidebar</title>
+    <link rel="stylesheet" href="side nav.css"
+</head>
+<body>
+    <div class="container">
+                <!--Menu Bar-->
+                <header class="menu-bar">
+                    <button id="toggleSidebar"
+                    class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+                    <h1>Blockchain Voting App</h1>
+                </header>
+                <!--Sidebar-->
+                <aside class="sidebar" id="sidebar">
+                 <h2>Voting App</h2>
+                 <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admin.html">Admin Portal</a></li>
+                    <li><a href="voting.html">Voting portal</a></li>
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                    </nav>
+                </aside>
+                <!--Main Content-->
+                <main class="main-content">
+                        <h1>Welcome to Blockvote</h1>
+                        <p>Secure, transparent, and decentralized voting platform powered by ICP Blockchain</p>
+                    </main>
+                     <!-- Toggle Button -->
+        <button id="toggle-btn">☰</button>
+                </div>
+                <script>
+                    // Sidebar Toggle Functionality
+                    const toggleBtn = document.getElementById('toggle-btn');
+                    const sidebar = document.getElementById('sidebar');
+                    toggleBtn.addEventListener('click', () => {
+                        sidebar.classList.toggle('show-sidebar');
+                    });
+                </script>
+    <script src="side nav.js"></script>
+</body>
+</html>

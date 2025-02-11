@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h2>Voting App</h2>
+            <nav>
+                <ul>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="admin.html">Admin Portal</a></li>
+                    <li><a href="voting.html">Voting Portal</a></li>
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>About the Blockvote App</h1>
+            <p>
+                Welcome to the Blockvote, a Blockchain based Voting App built on ICP Blockchain Technology. This platform is designed to provide a secure, transparent, 
+                and decentralized method for conducting elections. By leveraging blockchain technology, we ensure that 
+                every vote is immutable, traceable, and tamper-proof.
+            </p>
+
+            <!-- Key Features -->
+            <section class="features">
+                <h2 onclick="toggleSection('features-content')" class="collapsible">
+                    Key Features <span class="arrow">▼</span>
+                </h2>
+                <div id="features-content" class="collapsible-content">
+                    <ul>
+                        <li><strong>Security:</strong> All votes are encrypted and securely stored on the ICP blockchain network.</li>
+                        <li><strong>Transparency:</strong> Election data can be verified by voters and administrators.</li>
+                        <li><strong>Accessibility:</strong> A user-friendly interface for easy participation in elections.</li>
+                        <li><strong>Real-Time Results:</strong> Results are updated in real-time as votes are cast.</li>
+                        <li><strong>Cost-Effectiveness</strong>Reduce the cost of conducting traditional voting with low gas fee.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Purpose -->
+            <section class="purpose">
+                <h2 onclick="toggleSection('purpose-content')" class="collapsible">
+                    Our Purpose <span class="arrow">▼</span>
+                </h2>
+                <div id="purpose-content" class="collapsible-content">
+                    <p>
+                        Our mission is to revolutionize the way elections are conducted, eliminating fraud and increasing 
+                        trust in the democratic process. Whether for governmental elections, corporate board votes, or 
+                        student council elections, this platform is designed to meet diverse voting needs.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Meet the Team -->
+            <section class="team">
+                <h2>Meet the Team</h2>
+                <div class="team-container">
+                    <div class="team-member">
+                        <img src="team1.jpg" alt="Team Member 1">
+                        <h3>Abdussalam Yakubu Abubakar</h3>
+                        <p>Blockchain Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team2.jpg" alt="Team Member 2">
+                        <h3>Abdurrahman Salisu Asa</h3>
+                        <p>Front-End developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team3.jpg" alt="Team Member 3">
+                        <h3>Abubakar Musa</h3>
+                        <p>Designer</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+           <!-- Toggle Button -->
+           <button id="toggle-btn">☰</button>
+    </div>
+    <script>
+        // Sidebar Toggle Functionality
+        const toggleBtn = document.getElementById('toggle-btn');
+        const sidebar = document.getElementById('sidebar');
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('show-sidebar');
+        });
+    </script>
+    <script src="about.js"></script>
+</body>
+</html>

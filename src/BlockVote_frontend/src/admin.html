@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h2>Blockvote</h2>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admin.html" class="active">Admin Portal</a></li>
+                    <li><a href="voting.html">Voting Portal</a></li>
+                    <li><a href="result.html">Result</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Create a New Poll</h1>
+            <form id="poll-form">
+                <label for="poll-title">Poll Title:</label>
+                <input type="text" id="poll-title" placeholder="Enter poll title" required>
+
+                <label for="voting-duration">Voting Duration (e.g., 3 days):</label>
+                <input type="text" id="voting-duration" placeholder="Enter voting duration" required>
+
+                <label for="candidates">Candidates:</label>
+                <div id="candidates-container"></div>
+                <button type="button" id="add-candidate">Add Candidate</button>
+
+                <label for="admin-email">Admin Email:</label>
+                <input type="email" id="admin-email" placeholder="Enter admin email" required>
+
+                <label for="admin-phone">Admin Phone Number:</label>
+                <input type="tel" id="admin-phone" placeholder="Enter admin phone number" required>
+
+                <label for="admin-password">Admin Password:</label>
+                <input type="password" id="admin-password" placeholder="Enter admin password" required>
+
+                <button type="submit">Create Poll</button>
+            </form>
+        </main>
+         <!-- Toggle Button -->
+         <button id="toggle-btn">☰</button>
+    </div>
+    <script>
+        // Sidebar Toggle Functionality
+        const toggleBtn = document.getElementById('toggle-btn');
+        const sidebar = document.getElementById('sidebar');
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('show-sidebar');
+        });
+    </script>
+    <script src="admin.js"></script>
+</body>
+</html>
